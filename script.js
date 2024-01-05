@@ -1,53 +1,16 @@
-let a, b, result;
+let a = 5;
 
-// Присваивание
-a = 5;
-b = 2;
-
-// Сложение
-result = a + b;
-console.log(`Sum: ${result}`);
-
-// Вычитание
-result = a - b;
-console.log(`Difference: ${result}`);
-
-// Умножение
-result = a * b;
-console.log(`Multiplication: ${result}`);
-
-// Деление
-result = a / b;
-console.log(`Division: ${result}`);
-
-// Взятие остатка от деления
-result = a % b;
-console.log(`Remainder of the division: ${result}`);
-
-// Возведение в степень
-result = a ** b;
-console.log(`Exponentiation: ${result}`);
-
-// Оператор ">"
-result = a > b;
-console.log(`5 > 2: ${result}`);
-
-// Оператор "<"
-result = a < b;
-console.log(`5 < 2: ${result}`);
-
-// Оператор ">="
-result = a >= b;
-console.log(`5 >= 2: ${result}`);
-
-// Оператор "<="
-result = a <= b;
-console.log(`5 <= 2: ${result}`);
-
-// Оператор "===" (строгое равенство)
-result = a === b;
-console.log(`5 === 2: ${result}`);
-
-// Оператор "!==" (строгое неравенство)
-result = a !== b;
-console.log(`5 !== 2: ${result}`);
+switch (true) {
+  case (a > 10):
+    console.log("a больше 10");
+    break;
+  case (a > 5):
+    console.log("a больше 5, но не больше 10");
+    break;
+  case (a > 2):
+    console.log("a больше 2, но не больше 5");
+    break;
+  default:
+    console.log("a меньше или равно 2");
+    break;
+}
